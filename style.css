@@ -1,0 +1,386 @@
+/* ======================== GENERAL ============================= */
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.abs{
+    position: absolute;
+}
+/* ======================= HOME PAGE ============================ */
+.placeholder{
+    width: 100%;
+    height: 200vh;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+}
+.welcome-content{
+    right: -100%;
+    top: 30%;
+    text-align: center;
+    z-index: 1;
+}
+.welcome-content h1{
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    font-size: 5em;
+
+}
+.desktop{
+    height: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.welcome{
+    padding: 10% 0;
+    font-family: 'Courier Prime', monospace;
+
+}
+/* ---------------- Navigation bar ------------------- */
+.navbar{
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+.navbar>a, .dropbtn {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.navbar>a, .dropdown{
+    flex-grow: 1;
+    text-align: center;
+}
+.navbar img{
+    width: 6vw;
+}
+.navbar img:hover{
+    transform: scale(1.1);
+}
+.dropdown-content {
+    display: none;
+    background-color: white;
+    max-width: 160px;
+    margin: 0 auto;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid grey;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.dropdown:hover .dropbtn {
+    transform: scale(1.1);
+}
+/* ---------------- Carousel ------------------- */
+#content{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+}
+.home{
+    background-image: linear-gradient(to bottom, rgb(45,210,212), rgb(192,140,23));
+}
+#title{
+    margin-top: 50px;
+    width: fit-content;
+    align-self: center;
+    padding: 5%;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.carousel > * {
+    flex-grow: 1;
+}
+.carousel > div {
+    flex-grow: 2;
+}
+.carousel a{
+    text-align: center;
+}
+.cont1, .cont2, .cont3{
+    text-align: center;
+}
+.cont2 img {
+    width: 30vw;
+    height: 60vh;    
+    border-radius: 20%;
+    border: none;
+    margin: 20px 0;
+}
+.cont1 img, .cont3 img {
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20%;
+    border: none;
+    margin: 20px 0;
+    opacity: 0.5;
+}
+.prev, .next{
+    cursor:pointer;
+    display: inline-block;
+    margin: auto;
+    font-size: 60px;
+}
+.prev img{
+    transform: scale(-1,1);
+}
+.prev img, .next img{
+    width: 5vw;
+}
+.prev:hover, .next:hover{
+    transform: scale(1.1);
+}
+/* ======================= OTHER PAGES ============================ */
+.banner{
+    height: 40vh;
+}
+.banner h1{
+    text-align: center;
+    margin: 20vh auto 5vh;
+    text-transform: uppercase;
+    width: fit-content;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+    font-size: 5em;
+    color: white;
+    text-shadow: 5px 5px #000000;
+}
+/* ---------------- Background of different pages ------------------- */
+.banner-30mff{
+    background-image: url("./assets/30mff.png");
+    background-position: center;
+    background-size: cover;
+}
+.banner-comic{
+    background-color: grey;
+    background-image: url("./assets/comic1.png");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner-audio{
+    background-image: url("./assets/audio.png");
+    background-position: center;
+    background-size: cover;
+}
+.banner-video{
+    background-image: url("./assets/video.png");
+    background-position: center;
+    background-size: cover;
+}
+.banner-about{
+    background-image: linear-gradient(to left, rgb(146,255,255),rgb(255,202,153));
+}
+/* ---------------- Main Content ------------------- */
+.separator{
+    width: 100%;
+    height: 1px;
+    border: solid 1px black;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------- Thumbnail and Title ------------------- */
+.name-title{
+    display: flex;
+    width: 100%;
+}
+.thumbnail{
+    flex-grow: 1;
+    margin: 5% 10%;
+    width: 20vw;
+    border-radius: 50px;
+    border: #000000 10px solid;
+}
+.title{
+    flex-grow: 1;
+    margin: 8% 10%;
+    height: 10vh;
+    cursor: pointer;
+    align-self: center;
+}
+/* ---------------- Description Box ------------------- */
+.description{
+    display: flex;
+    width: 50%;
+    margin: 0 auto 10%;
+    border: 4px solid #000000;
+    background-image: linear-gradient(to left, rgb(146,255,255),rgb(255,202,153));
+    border-radius: 50px;
+    align-items: center;
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 20vw;
+}
+.links img{
+    width: 50px;
+    border-radius: 50%;
+}
+.links a{
+    padding: 15%;
+}
+.desc{
+    flex-grow: 2;
+    padding: 5%;
+    max-width: 40vw;
+    text-align: justify;
+}
+/* ======================= FOOTER ============================ */
+footer{
+    height: 30vh;
+    background-color: black;
+    color: white;
+    text-align: center; 
+}
+footer h3{
+    padding: 50px;
+}
+
+.contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact-list li{
+    padding: 5px 10px;
+}
+
+.contact-list li a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+/* ======================= ABOUT PAGE ============================ */
+
+.ym{
+    width: 20vw;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.about section{
+    display: flex;
+}
+
+.about section>*{
+    flex-grow: 1;
+    margin: 2% 5%;
+}
+
+.about section h2{
+    width: 50%;
+    max-width: 20vw;
+}
+
+.about section h3{
+    padding-top: 3%;
+}
+
+/* ======================= FOR SCREENS LESS WIDER THAN 800px ============================ */
+
+@media screen and (max-width:800px){
+    .placeholder{
+        height: 150vh;
+    }
+    .navbar img{
+        width: 10vw;
+    }
+    .welcome-content{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 0rem;
+    }
+    .welcome-content h1{
+        font-size: 3em;    
+    }
+    .cont2 img {
+        height: 40vh;  
+        width: 40vw;  
+    }
+    
+    .cont1 img, .cont3 img {
+        height: 20vh;
+    }
+    .description{
+        flex-direction: column;
+        width: 70%;
+    }
+    .links{
+        flex-direction: row;
+        width: 70%;
+        max-width: none;
+    }
+    .links a{
+        flex-grow: 1;
+        padding: 5%;
+    }
+    .name-title{
+        flex-direction: column;
+    }
+    .thumbnail{
+        width: 70vw;
+        margin: 10% auto;
+    }
+    .title{
+        width: 70vw;
+    }
+    .desc{
+        padding: 10%;
+        max-width: none;
+    }
+    .banner h1{
+        font-size: 3.5em;
+    }
+
+    #content{
+        margin-top: -20px;
+    }
+    .about section{
+        flex-direction: column;
+    }
+    .about section h2{
+        width: 100%;
+        max-width: none;
+        padding-top: 5%;
+    }
+    .ym{
+        height: 30vh;
+        width: auto;
+    }
+}
