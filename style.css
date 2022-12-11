@@ -141,6 +141,7 @@
     margin: 20px 0;
     opacity: 0.5;
 }
+/* ---------------- Previous and Next buttons ------------------- */
 .prev, .next{
     cursor:pointer;
     display: inline-block;
@@ -267,7 +268,6 @@ footer{
 footer h3{
     padding: 50px;
 }
-
 .contact-list {
     display: flex;
     list-style-type: none;
@@ -275,17 +275,14 @@ footer h3{
     margin: 0 auto;
     justify-content: center;
 }
-
 .contact-list li{
     padding: 5px 10px;
 }
-
 .contact-list li a{
     text-decoration: none;
     color: #f1f1f1;
 }
 /* ======================= ABOUT PAGE ============================ */
-
 .ym{
     width: 20vw;
     margin: 0 auto;
@@ -311,9 +308,10 @@ footer h3{
     padding-top: 3%;
 }
 
-/* ======================= FOR SCREENS LESS WIDER THAN 800px ============================ */
+/* ======================= FOR SCREENS WITH WIDTH LESS THAN 800px ============================ */
 
 @media screen and (max-width:800px){
+    /* ---------------- HOME PAGE ------------------- */
     .placeholder{
         height: 150vh;
     }
@@ -329,6 +327,10 @@ footer h3{
     .welcome-content h1{
         font-size: 3em;    
     }
+    #content{
+        margin-top: -20px;
+    }
+    /* ---------------- CAROUSEL ------------------- */
     .cont2 img {
         height: 40vh;  
         width: 40vw;  
@@ -337,6 +339,14 @@ footer h3{
     .cont1 img, .cont3 img {
         height: 20vh;
     }
+    /* ---------------- NAME AND TITLE ------------------- */
+    .title{
+        width: 70vw;
+    }
+    .banner h1{
+        font-size: 3.5em;
+    }
+    /* ---------------- DESCRIPTION BOX ------------------- */
     .description{
         flex-direction: column;
         width: 70%;
@@ -357,20 +367,12 @@ footer h3{
         width: 70vw;
         margin: 10% auto;
     }
-    .title{
-        width: 70vw;
-    }
+    
     .desc{
         padding: 10%;
         max-width: none;
     }
-    .banner h1{
-        font-size: 3.5em;
-    }
-
-    #content{
-        margin-top: -20px;
-    }
+    /* ---------------- ABOUT PAGE ------------------- */
     .about section{
         flex-direction: column;
     }

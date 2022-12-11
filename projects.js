@@ -4,6 +4,7 @@ hidden= true
 
 let title = document.querySelector(".title")
 
+//changing the visibility of the description box on user's click
 const displayDesc = ()=>{
     if (hidden){
         description.style.display = ''
@@ -15,4 +16,5 @@ const displayDesc = ()=>{
     }
 }
 
+//event listener for the project titles in each page
 title.addEventListener("click", displayDesc)
