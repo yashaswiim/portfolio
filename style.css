@@ -133,6 +133,9 @@
     border: none;
     margin: 20px 0;
 }
+.cont2 img:hover{
+    transform: scale(1.05)
+}
 .cont1 img, .cont3 img {
     width: 15vw;
     height: 40vh;
@@ -248,6 +251,9 @@
 .links img{
     width: 50px;
     border-radius: 50%;
+}
+.links a img:hover{
+    transform: translate(10px,-10px);
 }
 .links a{
     padding: 15%;
